@@ -2,35 +2,28 @@
 
 This is SPA written on react with redux and saga, utilizing The Movie Database API. Prototype designed on Adobe XD, link to prototype https://xd.adobe.com/view/5111c460-176b-40b2-6d7b-283320e98006-2720/
 
-## Getting Started
+## Instructions
 
-Clone a repository into a new directory using 
+Setup
 
 ```
+// clone the repo
 git clone https://github.com/isajkatt/frontcima.git
 
-```
+cd frontcima
 
-### Prerequisites
-
-Install all dependencies using the following command
-
-```
 npm install
+
 ```
-
-### Running the project
-
-First run webpack with development flag
+Run webpack
 
 ```
 webpack --mode=development
+
 ```
 
-Run express server
+Run the demo
 
 ```
 npm start
 ```
-
-Open web browser on http://localhost:3000
