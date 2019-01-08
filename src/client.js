@@ -13,8 +13,9 @@ import logger from 'redux-logger';
 
 import NavBar from './components/pages/navBar';
 import MoviesList from './components/pages/moviesList';
+import MovieDetails from './components/pages/movieDetails';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import thunk from 'redux-thunk';
 
@@ -26,16 +27,15 @@ const store = createStore(reducers, /* preloadedState, */ composeEnhancers(
   applyMiddleware(logger, thunk)
 ));
 
-const Routes = (  
+const Routes = (
   <Provider store={store}>
-      <BrowserRouter>
-        <div>
+    <BrowserRouter>
+      <div className="App">
         <NavBar />
-         <Switch>
-            <Route exact path="/" component={MoviesList}/>
-         </Switch>
-        </div>
-      </BrowserRouter>
+        <Route path="/" exact strict component={MoviesList} />
+        <Route path="/movie/:id" exact strict component={MovieDetails} />
+      </div>
+    </BrowserRouter>
   </Provider>
 )
 
