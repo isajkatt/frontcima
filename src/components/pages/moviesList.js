@@ -4,6 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getMovies } from '../../actions/moviesActions';
+import MovieItem from './movieItem';
 
 class MoviesList extends React.Component {
 
@@ -16,8 +17,7 @@ class MoviesList extends React.Component {
     const moviesList = this.props.movies.map(function (moviesArr) {
       return (
         <div key={moviesArr.id}>
-          <h2>{moviesArr.title}</h2>
-          <h2>{moviesArr.description}</h2>
+          <MovieItem  id={moviesArr.id} title={moviesArr.title} description={moviesArr.overview} />
         </div>
       )
     })
