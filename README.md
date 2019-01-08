@@ -13,13 +13,11 @@ git clone https://github.com/isajkatt/frontcima.git
 cd frontcima
 
 npm install
-
 ```
 Run webpack
 
 ```
 webpack --mode=development
-
 ```
 
 Run the demo
