@@ -1,0 +1,33 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Test application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js webpack --mode development",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isajkatt/frontcima.git"
+  },
+  "author": "Azamat Ismagulov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isajkatt/frontcima/issues"
+  },
+  "homepage": "https://github.com/isajkatt/frontcima#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "redux": "^4.0.1"
+  }
+}
