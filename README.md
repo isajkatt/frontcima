@@ -25,3 +25,5 @@ Run the demo
 ```
 npm start
 ```
+
+Open browser on http://localhost:3000
